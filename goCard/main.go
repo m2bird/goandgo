@@ -4,7 +4,12 @@ import "fmt"
 
 func main() {
 
-	card := "Ace of Spades"
+	cards := []string{"Ace of Diamonds", card()}
+	cards = append(cards, "Six of Spades")
+	fmt.Println(cards)
 	
-	fmt.Println(card)
+}
+
+func card() string {
+	return "Five of Diamonds"
 }
